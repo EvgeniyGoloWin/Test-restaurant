@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import productsReducer from "../redux/reducers/productReduser";
-import userReducer from "../redux/reducers/usersReducer";
+import productsReducer from "./reducers/ProductReduser";
+import userReducer from "./reducers/UsersReducer";
 import { useDispatch, useSelector } from "react-redux";
 
 export const store = configureStore({

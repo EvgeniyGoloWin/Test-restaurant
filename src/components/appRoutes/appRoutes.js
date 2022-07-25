@@ -4,10 +4,10 @@ import {
    Routes,
    Route,
 } from "react-router-dom";
-import Login from "../login/login";
-import HomePage from "../Home/homePage";
-import SignIn from "../signIn/signIn"
-import { routes } from "./constants";
+import Login from "../Login/Login";
+import HomePage from "../Home/HomePage";
+import SignIn from "../SignIn/SignIn"
+import { routes } from "./Constants";
 import { Modal } from "../Modal/Modal";
 
 export const AppRoutes = () => {

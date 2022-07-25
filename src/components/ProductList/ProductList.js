@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAppSelector } from "../../redux/store";
+import { useAppSelector } from "../../Redux/store";
 import { ProductItem } from "../ProductItem";
 
 export const ProductList = () => {

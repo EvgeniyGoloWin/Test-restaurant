@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useForm } from "react-hook-form";
-import "./login.css"
-import { routes } from "../appRoutes/constants";
+import "./Login.css"
+import { routes } from "../AppRoutes/Constants";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux/es/exports';
-import { useAppSelector } from '../../redux/index';
-import { userLogin } from '../../redux/reducers/usersReducer';
+import { useAppSelector } from '../../Redux/redux';
+import { userLogin } from '../../Redux/reducers/UsersReducer';
 
 
 
@@ -31,7 +31,7 @@ const Login = () => {
    }
 
    return (
-      <div>
+      <div className="form-login">
          <h1>Login</h1>
          <form onSubmit={handleSubmit(onSubmit)}>
             <label>

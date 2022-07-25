@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useAppDispatch, useAppSelector } from "../../redux/index";
-import { fetchProducts } from "../../redux/reducers/productReduser";
-import { Filters } from '../Filters/filter';
+import { useAppDispatch, useAppSelector } from "../../Redux/redux";
+import { fetchProducts } from "../../Redux/reducers/ProductReduser";
+import { Filters } from '../Filters/Filter';
 import { Modal } from '../Modal/Modal';
-import './homePage.css'
+import './HomePage.css'
 
 const API = 'https://random-data-api.com/api/restaurant/random_restaurant?size=100'
 

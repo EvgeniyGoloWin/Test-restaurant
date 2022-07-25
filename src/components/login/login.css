@@ -42,7 +42,8 @@ input {
    border: 1px solid white;
    padding: 10px 15px;
    margin-bottom: 15px;
-   font-size: 14px;
+   /* font-size: 14px; */
+   width: 350px
 }
 
 .label,
@@ -75,6 +76,7 @@ button[type="submit"],
    width: 40%;
    letter-spacing: 0.5rem;
    transition: 0.3s all;
+   width: 350px;
 }
 
 .buttonBlack {
@@ -133,4 +135,9 @@ input[type="submit"]:active {
 
 .preact:hover {
    opacity: 1;
+}
+
+.form-login {
+   justify-content: center;
+   display: grid;
 }

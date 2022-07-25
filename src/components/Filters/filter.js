@@ -1,7 +1,7 @@
 import React from 'react';
-import { useAppDispatch, useAppSelector } from "../../redux/index";
-import { setFilter } from "../../redux/reducers/productReduser";
-import "./filter.css"
+import { useAppDispatch, useAppSelector } from "../../Redux/redux";
+import { setFilter } from "../../Redux/reducers/ProductReduser";
+import "./Filter.css"
 
 
 export const Filters = () => {

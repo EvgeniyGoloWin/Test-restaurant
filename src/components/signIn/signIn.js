@@ -1,15 +1,16 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { userRegister } from "../../redux/reducers/usersReducer";
-import { routes } from "../appRoutes/constants";
+import { userRegister } from "../../Redux/reducers/UsersReducer";
+import { routes } from "../AppRoutes/Constants";
 import { Link } from "react-router-dom";
 import { useDispatch } from 'react-redux/es/exports';
+import './SignIn.css'
 
 
 
 const SignIn = (props) => {
    const dispatch = useDispatch();
-   const { register, formState: { errors, isValid },
+   const { register, formState: { errors },
       handleSubmit,
       reset,
    } = useForm({
@@ -22,7 +23,7 @@ const SignIn = (props) => {
    }
 
    return (
-      <div>
+      <div className="form-registration">
          <h1>Registration</h1>
          <form onSubmit={handleSubmit(onSubmit)}>
             <label>
@@ -53,7 +54,7 @@ const SignIn = (props) => {
                   })}
                />
             </label>
-            <label>
+            {/* <label>
                repeat password:
                <input
                   type='password'
@@ -65,12 +66,12 @@ const SignIn = (props) => {
                      }
                   })}
                />
-            </label>
+            </label> */}
             <div style={{ height: 40 }}>
                {errors?.password && <p>{errors?.password?.message || 'Error'}</p>}
             </div>
-            <div><input type="submit" disabled={!isValid} /></div>
             <Link to={routes.login}>login</Link>
+            <><button type="submit" >Submit</button></>
          </form>
       </div>
    )

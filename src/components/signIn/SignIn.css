@@ -1,0 +1,13 @@
+.form-registration {
+   display: grid;
+   justify-content: center;
+}
+
+
+input {
+   padding: 10px 15px;
+}
+
+button {
+   padding: 20px
+}

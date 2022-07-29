@@ -1,6 +1,6 @@
 import React from 'react';
-import { useAppSelector } from "../../Redux/store";
-import { ProductItem } from "../ProductItem";
+import { useAppSelector } from "../../Redux/redux";
+import { ProductItem } from "../ProductItem/ProductItem";
 
 export const ProductList = () => {
    const { products, filteredProducts } = useAppSelector((state) => state.products);

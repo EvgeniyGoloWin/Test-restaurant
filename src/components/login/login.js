@@ -14,7 +14,7 @@ const Login = () => {
    const dispatch = useDispatch();
    const navigate = useNavigate();
    const { error, isAuthenticated } = useAppSelector((state) => state.user);
-   const { register, formState: { errors, isValid },
+   const { register, formState: { errors },
       handleSubmit,
       reset,
    } = useForm({

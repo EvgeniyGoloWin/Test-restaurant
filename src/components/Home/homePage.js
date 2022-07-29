@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from "../../Redux/redux";
 import { fetchProducts } from "../../Redux/reducers/ProductReduser";
 import { Filters } from '../Filters/Filter';
-import { Modal } from '../Modal/Modal';
+import { ProductList } from '../ProductList/ProductList';
 import './HomePage.css'
 
 const API = 'https://random-data-api.com/api/restaurant/random_restaurant?size=100'
@@ -68,7 +68,8 @@ const HomePage = () => {
             <div className='wrapper-main'>
                <Filters />
                <div className='products'>
-                  {
+                  <ProductList />
+                  {/* {
                      filteredProducts.length ?
                         filteredProducts.map((item) => {
                            return <div key={item.uid} onClick={(e) => openModal(e, item.uid)}>
@@ -104,7 +105,7 @@ const HomePage = () => {
                               </Modal>
                            </div>
                         })
-                  }
+                  } */}
                </div>
             </div>
             <div className='wrapper-footer'></div>
